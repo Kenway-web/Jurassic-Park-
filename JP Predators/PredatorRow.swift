@@ -16,7 +16,7 @@ struct PredatorRow:View {
         
         HStack{
             // Dino Image
-            Image("tyrannosaurusrex")
+            Image(predator.name.lowercased().filter{ $0 != " "})
                 .resizable()
                 .scaledToFit()
                 .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/,height: 100)
@@ -24,18 +24,18 @@ struct PredatorRow:View {
             
             VStack(alignment:.leading){
                 //Name
-                Text("tyrannosaurusrex")
+                Text(predator.name)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 
                 //Type
-                Text("Land")
+                Text(predator.type.capitalized)
                     .font(.subheadline)
                     .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                     .padding(.horizontal,13)
                     .padding(.vertical,5)
                     .overlay{
                         RoundedRectangle(cornerRadius: 20)
-                            .fill(.brown.opacity(0.33))
+                            .fill(predator.typeOverlay().opacity(0.33))
                     }
                     
             }
