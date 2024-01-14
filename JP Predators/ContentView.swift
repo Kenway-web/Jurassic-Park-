@@ -17,13 +17,14 @@ struct ContentView: View {
         NavigationView {
             List{
                 ForEach(apController.apexPredators){ predator in
-                    NavigationLink(destination:Text("Dino Details Go there.")) {
+                    NavigationLink(destination:PredatorDetail(predator: predator)) {
                        PredatorRow(predator: predator)
                     }
                 }
             }
             .navigationTitle("Apex Predators")
         }
+       .preferredColorScheme(.dark) 
     }
 }
 
