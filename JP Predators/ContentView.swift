@@ -12,8 +12,11 @@ struct ContentView: View {
     // intialize predator controller
     let apController = PredatorController()
     @State var sortAlphabetical = false
+    @State var currentfilter = "All"  // default filter
     
     var body: some View {
+        
+        apController.filterBy(type: currentfilter)
         
         if sortAlphabetical{
             apController.SortByAlphabetical()
@@ -34,7 +37,9 @@ struct ContentView: View {
             .toolbar{
                 ToolbarItem(placement: .navigationBarLeading){
                     Button{
-                        sortAlphabetical.toggle()
+                        withAnimation{
+                            sortAlphabetical.toggle()
+                        }
                     } label: {
                         if sortAlphabetical {
                             Image(systemName: "film")
@@ -45,6 +50,26 @@ struct ContentView: View {
                         }
                     }
                 }
+                
+                ToolbarItem(placement: .navigationBarTrailing){
+                    Menu{
+                        Picker("Filter",selection: $currentfilter.animation()){
+                            ForEach(apController.typefilters,id: \.self){ type in
+                                HStack{
+                                    Text(type)
+                                    
+                                    Spacer()
+                                    
+                                    Image(systemName: apController.typeIcon(for: type))
+                                }
+                            }
+                        }
+                    }
+                    label:{
+                        Image(systemName: "slider.horizontal.3")
+                    }
+                }
+                
             }
         }
        .preferredColorScheme(.dark) 
