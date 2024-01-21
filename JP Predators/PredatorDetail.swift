@@ -17,6 +17,7 @@ struct PredatorDetail: View {
                 Image(predator.type)
                     .resizable()
                     .scaledToFit()
+                    .offset(y:-110)
                     
                 
                 Image(predator.name.lowercased().filter{ $0 != " "})
@@ -37,7 +38,6 @@ struct PredatorDetail: View {
                     
                     ForEach(predator.movies, id: \.self){movie in
                         Text("•"+movie)
-                        
                     }
                     
                     Text("Movie Moments")

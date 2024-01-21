@@ -11,10 +11,18 @@ struct ContentView: View {
     
     // intialize predator controller
     let apController = PredatorController()
-    
+    @State var sortAlphabetical = false
     
     var body: some View {
-        NavigationView {
+        
+        if sortAlphabetical{
+            apController.SortByAlphabetical()
+        }
+        else{
+            apController.SortByMovieAppearance()
+        }
+        
+       return NavigationView {
             List{
                 ForEach(apController.apexPredators){ predator in
                     NavigationLink(destination:PredatorDetail(predator: predator)) {
@@ -23,6 +31,21 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Apex Predators")
+            .toolbar{
+                ToolbarItem(placement: .navigationBarLeading){
+                    Button{
+                        sortAlphabetical.toggle()
+                    } label: {
+                        if sortAlphabetical {
+                            Image(systemName: "film")
+                           
+                        }
+                        else{
+                            Image(systemName: "textformat")
+                        }
+                    }
+                }
+            }
         }
        .preferredColorScheme(.dark) 
     }

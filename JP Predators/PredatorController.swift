@@ -31,4 +31,12 @@ class PredatorController{
         }
     }
     
+    
+    func SortByAlphabetical(){
+        apexPredators.sort(by: { $0.name < $1.name})
+    }
+    
+    func SortByMovieAppearance(){
+        apexPredators.sort(by: {$0.id < $1.id})
+    }
 }
