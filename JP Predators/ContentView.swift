@@ -13,9 +13,9 @@ struct ContentView: View {
     let apController = PredatorController()
     @State var sortAlphabetical = false
     @State var currentfilter = "All"  // default filter
-    
+    @State private var searchText: String = ""
     var body: some View {
-        
+         
         apController.filterBy(type: currentfilter)
         
         if sortAlphabetical{
@@ -24,6 +24,7 @@ struct ContentView: View {
         else{
             apController.SortByMovieAppearance()
         }
+        
         
        return NavigationView {
             List{
@@ -34,6 +35,12 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Apex Predators")
+            .searchable(text: $searchText)
+            .onChange(of: searchText) { newValue, oldValue in
+                if newValue != oldValue {
+                    apController.SearchResult(searchText: newValue)
+                }
+            }
             .toolbar{
                 ToolbarItem(placement: .navigationBarLeading){
                     Button{
@@ -71,6 +78,7 @@ struct ContentView: View {
                 }
                 
             }
+           
         }
        .preferredColorScheme(.dark) 
     }

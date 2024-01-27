@@ -9,7 +9,7 @@ import Foundation
 
 
 class PredatorController{
-  private var allpexPredators:[ApexPredator]=[]
+    private var allpexPredators:[ApexPredator]=[]
     var apexPredators: [ApexPredator] = []
     let typefilters = ["All","Land","Air","Sea"]
     
@@ -61,5 +61,14 @@ class PredatorController{
         apexPredators.sort(by: {$0.id < $1.id})
     }
     
+    func SearchResult(searchText:String) {
+        if searchText.isEmpty {
+               apexPredators = allpexPredators
+           } else {
+               apexPredators = allpexPredators.filter { predator in
+                   predator.name.lowercased().contains(searchText.lowercased())
+               }
+           }
+    }
     
 }

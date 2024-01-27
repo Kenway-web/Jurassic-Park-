@@ -20,6 +20,7 @@
 		185A20E42B53180000587AB1 /* PredatorDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185A20E32B53180000587AB1 /* PredatorDetail.swift */; };
 		186F2B1D2B5D900D009F4698 /* DinoFullScreenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F2B1C2B5D900D009F4698 /* DinoFullScreenImageView.swift */; };
 		18DEBA372B4C3B5B00E8240B /* PredatorRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DEBA362B4C3B5B00E8240B /* PredatorRow.swift */; };
+		18F41F552B62D613007122A4 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F41F542B62D613007122A4 /* SearchResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		185A20E32B53180000587AB1 /* PredatorDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorDetail.swift; sourceTree = "<group>"; };
 		186F2B1C2B5D900D009F4698 /* DinoFullScreenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DinoFullScreenImageView.swift; sourceTree = "<group>"; };
 		18DEBA362B4C3B5B00E8240B /* PredatorRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredatorRow.swift; sourceTree = "<group>"; };
+		18F41F542B62D613007122A4 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				1850D1132B4B0884002AEA55 /* ApexPredator.swift */,
 				1850D1152B4B0F28002AEA55 /* PredatorController.swift */,
 				1850D0E92B4AFAC4002AEA55 /* ContentView.swift */,
+				18F41F542B62D613007122A4 /* SearchResult.swift */,
 				18DEBA362B4C3B5B00E8240B /* PredatorRow.swift */,
 				185A20E32B53180000587AB1 /* PredatorDetail.swift */,
 				186F2B1C2B5D900D009F4698 /* DinoFullScreenImageView.swift */,
@@ -278,6 +281,7 @@
 			files = (
 				186F2B1D2B5D900D009F4698 /* DinoFullScreenImageView.swift in Sources */,
 				1850D1162B4B0F28002AEA55 /* PredatorController.swift in Sources */,
+				18F41F552B62D613007122A4 /* SearchResult.swift in Sources */,
 				1850D1142B4B0885002AEA55 /* ApexPredator.swift in Sources */,
 				1850D0EA2B4AFAC4002AEA55 /* ContentView.swift in Sources */,
 				185A20E42B53180000587AB1 /* PredatorDetail.swift in Sources */,
