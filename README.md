@@ -19,8 +19,7 @@ Welcome to Jurassic Explorer, an iOS application that takes you on a thrilling j
 ## Screenshots
 
 
-
-<img src="https://github.com/Kenway-web/Jurassic-Park-/blob/main/JP%20Predators/Assets.xcassets/jpdinodetail.imageset/jpdinodetail.png" width="300"/>  <img src="https://github.com/Kenway-web/Jurassic-Park-/blob/main/JP%20Predators/Assets.xcassets/jpdinoimage.imageset/jpdinoimage.png" width="300"/>   <img src="https://raw.githubusercontent.com/Kenway-web/Jurassic-Park-/main/JP%20Predators/Assets.xcassets/jphome.imageset/jphome.png" width="300" />
+<img src="https://github.com/Kenway-web/Jurassic-Park-/blob/main/JP%20Predators/Assets.xcassets/jpdinoimage.imageset/jpdinoimage.png" width="300"/>  <img src="https://github.com/Kenway-web/Jurassic-Park-/blob/main/JP%20Predators/Assets.xcassets/jpdinodetail.imageset/jpdinodetail.png" width="300"/>   <img src="https://raw.githubusercontent.com/Kenway-web/Jurassic-Park-/main/JP%20Predators/Assets.xcassets/jphome.imageset/jphome.png" width="300" />
 
 ## Installation
 
