@@ -1,6 +1,6 @@
 # Jurassic Explorer iOS App
 
-![Jurassic Explorer Logo](https://github.com/Kenway-web/Jurassic-Park-/blob/main/JP%20Predators/Assets.xcassets/AppIcon.appiconset/10AppSto.png)
+<img src="https://raw.githubusercontent.com/Kenway-web/Jurassic-Park-/main/JP%20Predators/Assets.xcassets/AppIcon.appiconset/10AppSto.png" width="100" height="150" />
 
 ## Overview
 
